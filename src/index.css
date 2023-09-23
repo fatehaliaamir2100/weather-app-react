@@ -1,13 +1,104 @@
+@import url('https://fonts.googleapis.com/css?family=Outfit:400,700&display=swap');
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Outfit', sans-serif;
+  font-size: 16px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url('./wallpaper.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: white;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+p {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1rem;
+}
+
+h1 {
+  font-family: 'Outfit', sans-serif;
+  font-size: 3rem;
+}
+
+.App {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+
+/* Center the search bar horizontally */
+.App .search .search-bar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+  font-color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.App input {
+  width: 100%;
+  max-width: 400px;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 12px;
+  background-color: rgba(0, 0, 0, 10);
+  color: white;
+  font-size: 1rem;
+  font-family: 'Outfit', sans-serif;
+  font-weight: bold;
+  text-align: center;
+  outline: none;
+}
+
+.container {
+  width: 90%;
+  max-width: 400px;
+  margin: auto;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.App .top {
+  width: 100%;
+  margin: 1rem auto;
+}
+
+.App .description {
+  /* Remove unnecessary styles */
+}
+
+.App .bottom {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  border-radius: 12px;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.bold {
+  font-weight: bold;
+}
+
+::placeholder {
+  color: rgba(255, 255, 255, 0.5);
 }
